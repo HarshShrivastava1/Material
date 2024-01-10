@@ -1,0 +1,25 @@
+Create an application "Job Application"
+
+Step 1: Create express generator app
+Step 2: Connect the app with mongodb database
+Step 3: Create JobModel, description given below: job_title, job_description, job_place, job_salary, job_experience, job_designation, job_applicants, job_type, opening_date , closing_date
+
+Step 4: Create UI 
+i. Homepage -> /(get)
+homepage should include navigation (home, create job, all jobs, apply for jobs and make their individual routes)
+
+ii. create job -> /createjob(get) 
+will include form and all the job create related fileds
+
+iii. all jobs -> /alljobs(get)
+provide all the registered jobs present in the database and admin can delete and update the job from here i.e. must create two more routes 
+/deletejob/:id(get dynamic route)
+/updatejob/:id(get dynamic route)
+
+iv. apply for job -> applyjob(get)
+user will see all the jobs and every job must have apply button wherer user can apply job from here.
+
+
+
+
+

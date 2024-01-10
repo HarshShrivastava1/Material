@@ -1,0 +1,60 @@
+understand modules /files generated while install boilerplate of expressJs
+
+ctrl + c is to end npm , otherwise it will not open on same 3000 port thats why np end is required
+
+bin :- 3000 port h , agr usko band nhi kra to vo open he rhta h , bin me jske , uska port 3000 ki gajha 2000 1000 khol skte h jisse files mess na ho .
+
+package.json :- {registeries} of dependencies mtlb knsa dependies or modules ki location , kaha vo rkhi hue h .
+isme srif location rhti h.
+
+routes:- rasta //mp//sagar//bina//manoramaWard//mera ghr
+
+views :- alg alg routes pr different views hote h . ham apna code viewa ke andar krte h .
+
+node_modules :- vo sari files aur modules jo install ki thi .
+
+public :-   jese ham html me vdos imgs lgte the but unhe find krne bde code me muskil hota h pr yaha inn sbke kiye hmre ps alg se fonder h imgs ka vdos ka , js ka , css ka 
+
+
+
+package lock.json:- isme details hoti h , jnse dependiency downlod ki h unka naam , uska size , verson , kha store h ye sb.
+
+
+
+
+
+
+**import export of single data of js one file to another 
+//js file one 
+a.js 
+let a = 12
+
+// js file second
+module.exports= a
+
+**import export of multiple data of js one file to another 
+//js file one 
+b.js
+let b = 66;
+
+//js file second
+//const abc = require("Path/fileName")
+const abc = require
+
+
+
+hello.js //file one
+var a = 5 ;
+module.export=a // it is used in the file where we have to send or export the data to another file
+
+
+
+
+// it is used to recieve and import data from the another file
+require("hello.js")
+hi.js//file two
+consol.log(a);
+ 
+
+consol Window shows 5 as a output
+

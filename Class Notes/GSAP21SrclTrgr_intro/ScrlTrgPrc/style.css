@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+.pg1{
+    height: 100%;
+    width: 100%;
+    background-color: #f3a0a0;
+    position: relative;
+    /* background-image: url(https://wallpaperaccess.com/full/5499263.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.pg2{
+    height: 100%;
+    width: 100%;
+    background-color: #e8b64b;
+    background-image: url(https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/vaishali/ashokan_pillar__kolhua_vaishali/ashokan_pillar_7305345.jpg/jcr:content/renditions/cq5dam.web.480.480.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pg3{
+    height: 100%;
+    width: 100%;
+    background-color: #53df7b;
+    position: relative;
+    /* background-image: url(https://qph.cf2.quoracdn.net/main-qimg-bf9cf61255c14046226f4ebc91322074);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.pg4{
+    height: 100%;
+    width: 100%;
+    background-color: #3f2929;
+}
+.pg5{
+    height: 100%;
+    width: 100%;
+    background-color: #30328f;
+}
+.pg6{
+    height: 100%;
+    width: 100%;
+    background-color: #9d358a;
+}
+
+.pg2 h1{
+    font-family: Gilroy;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 45vw;
+    text-align: center;
+    white-space: nowrap;
+    color: rgba(13, 7, 47, 0.796);
+    
+}
+.pg1 img{
+    width: 30%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* object-fit: cover; */
+    position: absolute;
+}
+.pg3 .container{
+    width: 350px;
+    height: 350px;
+    /* background: linear-gradient(); */
+    background: linear-gradient(to right bottom, rgb(230, 230, 237),royalblue,rgb(1, 1, 43));
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

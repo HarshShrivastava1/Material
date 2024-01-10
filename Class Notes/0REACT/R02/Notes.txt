@@ -1,0 +1,50 @@
+rafce :- React Arrow Function Export Component 
+it gives a boilerplate to do start out code in App.jsx
+
+Meaning of Jsx 
+jsx = Html + js.
+
+
+
+App(){
+    js code 
+    return("html")
+}
+*in return only single entity will be passed . to pass more things div / Fragment / Empity tags are used as a Packet and dump all things in it.
+..............................................................................................................
+Import Export in jsx(React)
+
+A.jsx                        //(file one)
+Let a = 5;
+Export default a ;
+
+Let b = 5;
+Export constant b ; 
+
+B.js
+Import a from path.         (one time )
+--> var name can be change , it is allow in export default.
+
+
+Import {b} from path       (multiple times)
+--> same name should be used in it . 
+---------------------------------------
+Public, source index.html 
+Index :- frontend 
+
+
+
+rafce in app.reacte , gives a fresh code or say boilerplate 
+
+Rafce :- React arrow function Components and Functions 
+
+
+Meaning of jsx
+Html + js 
+.........
+Normal arrow fun . Have return and in it means return we write html 
+
+Plane space have any js code 
+And in return, view/frontend will be written
+
+Only one entity will be returned by return.

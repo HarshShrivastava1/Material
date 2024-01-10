@@ -1,0 +1,14 @@
+`to transfer data from server/route file(index.js) to ejs(js -> ejs) we user second argument of render method
+
+**second argument of render method is always a JS object,
+
+we send any type of value in the same same object in the form of {key:value} pair
+
+res.render("ejs_page_name", { key: value})
+
+
+*if we want to print array in ejs we need to use forEach in ejs file to render each and every element of an array
+
+
+
+

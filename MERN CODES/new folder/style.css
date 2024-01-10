@@ -1,0 +1,41 @@
+/* Q } box 2 ko margin diye jane pr box 1 usse follow kyo kr rha h , ?
+Explaination : box 2 ko marging top di 20px , aur box 1 ki hamne positioning kr di aur usme ps kiya right 0 aur bottom 0 , 
+iss hisab se usse botttom me ja kr bath jana chaiye but usne box 1 jitne neeche se marging le li 20 px ki HOW
+
+Q } Positioning absolute krne ke baad marging aur padding work krna band kr dete h menas un effective ho jate h ? */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.box1 {
+  height: 300px;
+  width: 300px;
+  background-color: tomato;
+  /* any elerment flow is 
+  t l b r to change it we use display flex or positioning
+  */
+  position: absolute;
+  border: 1px solid tomato;
+  /* to set a postition of element we have some properties like 
+  Top left Bottom Right z-index(to set layer priority ) 
+  */
+  /* bottom: 0; */
+  right: 0;
+  margin: 0;
+  border: 30px solid green;
+  
+}
+.box2 {
+  height: 300px;
+  width: 300px;
+  background-color: royalblue;
+  margin: 20px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Sending Form Data To Backend</h1>
+        <form action="/signup" method="get">
+            <input name="username" type="text" placeholder="username" />
+            <br /><br />
+            <input type="radio" name="gender" value="female" /> Female &nbsp;
+            &nbsp; &nbsp; <input type="radio" name="gender" value="male" /> Male
+            <br /><br />
+            <select name="city">
+                <option value="bhopal">Bhopal</option>
+                <option value="indore">Indore</option>
+                <option value="gwalior">Gwalior</option>
+            </select>
+            <br /><br />
+            <textarea name="bio" placeholder="enter bio here"></textarea>
+            <br /><br />
+            <input value="true" name="validate" type="checkbox" /> Accept
+            <br /><br />
+            <button>Signup</button>
+        </form>
+    </body>
+</html>

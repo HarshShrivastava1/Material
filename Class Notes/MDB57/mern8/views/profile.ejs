@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .posts {
+      display: flex;
+      width: 100%;
+    }
+
+    .post {
+      max-width: 150px;
+      display: flex;
+      flex-direction: column;
+      padding: 9px;
+      border-radius: 7px;
+      background-color: #dad7d7;
+    }
+
+    .post img {
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <h1> userName : <%= user.username %> </h1>
+  <h1> email : <%= user.email %> </h1>
+
+  <div class="posts">
+    <% user.posts.forEach(post=>{ %>
+
+    <div class="post">
+      <img src="<%= post.image %>" alt="">
+      <p class="caption"><%= post.caption %></p>
+    </div>
+
+    <% }) %>
+  </div>
+
+</body>
+
+</html>

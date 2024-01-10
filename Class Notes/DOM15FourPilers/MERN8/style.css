@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 50px;
+}
+#bulb{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #000;
+}
+
+button{
+    padding: 12px 25px;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}

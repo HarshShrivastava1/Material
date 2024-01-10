@@ -1,0 +1,44 @@
+Installing Express Boilerplate
+npm i -g express-generator
+
+--Creating Boilerplate
+express foldername --view=ejs
+
+cd foldername
+npm install
+
+--open vs code
+code .
+
+-- to run server
+npm start
+
+--to see in browser
+http://localhost:3000
+
+--to load script
+Set-ExecutionPolicy RemoteSigned  
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser 
+
+
+
+
+// keep in mind your directry always end with[ \>Deskstop  ]while starting Express process . to add it use cd deskstop
+Example :-    C:\Users\PC\Deskstop>
+npm i -g express-generator    //Ins.exp.boiplt
+express foldernaam --view=ejs// creation of exp. blp.
+cd foldernaam             //go into the directory
+npm install              // npm installation
+code .                  //side by side vs code open
+                       // ctrl + {`}backtick to open terminal
+npm start             // to start npm in terminal
+                     // go on a brouser and write coomand to see changes in front end 
+http://localhost:3000 
+
+
+
+
+
+
+
+

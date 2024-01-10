@@ -1,0 +1,17 @@
+<%- include('header') %>
+    <%- include('nav') %>
+        <div class="main">
+            <h1>reg</h1>
+            <form action="/reg" method="post">
+                <!-- <input type="text" placeholder="id" name="id"> -->
+                <input type="text" placeholder="name" name="name">
+                <input type="text" placeholder="author" name="author">
+                <input type="text" placeholder="desc" name="desc">
+                <input type="text" placeholder="page" name="page">
+                <input type="text" placeholder="pub" name="pub">
+                <input type="text" placeholder="yr" name="yr">
+                <input type="text" placeholder="price" name="price">
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <%- include('footer') %>

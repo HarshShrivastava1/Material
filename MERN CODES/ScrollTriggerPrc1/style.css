@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+.pg0{
+    height: 100%;
+    width: 100%;
+}
+.pg1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: rgb(166, 155, 155); */
+}
+.pg2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(100, 91, 91);
+    position: relative;
+    
+}
+.pg3{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(36, 35, 35, 0.882); */
+}
+.pg4{
+    height: 100%;
+    width: 100%;
+  
+}
+
+.pg2 img{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    object-fit: cover;
+}
+
+.pg1 h1{
+    font-family: Gilroy;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: absolute;
+    font-size: 600px;
+    white-space: nowrap;
+}

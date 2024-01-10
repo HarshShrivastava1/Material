@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 2vh;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+a:visited {
+  color: currentColor;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  color: black;
+}
+
+button {
+  color: black;
+}
+
+.card {
+  margin-top: 5vh;
+  border-radius: 15px;
+  border: 5px solid currentColor;
+  text-align: center;
+  width: max-content;
+  display: inline-block;
+}
+
+.card>h1 {
+  padding: 20px;
+}
+
+.card2 {
+  margin-top: 1vh;
+  border-radius: 15px;
+  border: 5px solid currentColor;
+  text-align: center;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+.card2>h1 {
+  padding: 2vh;
+}
+
+.card_par {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+button {
+  padding: 8px 15px;
+}

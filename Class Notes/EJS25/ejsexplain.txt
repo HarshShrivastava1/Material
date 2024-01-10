@@ -1,0 +1,26 @@
+html -> html 
+ejs -> view engine/ template engine
+to embed js in html we use ejs view engine
+
+how to print a variable or expression
+<%= expression %>
+*ham isme out.print nhi likhte kyoki iska kaam he print krwana h 
+*jab hme value ka use krna ho tb ham iska use krte h.
+
+how to use if/else or loop or statement
+<% statement %>
+
+
+example :-
+ <%var arr=[43,25,64,53,77,23,67]%>
+<%arr.forEach(function(e,i){%>
+<%if(e%2==0){%>
+<%=<h2>e</h2>%>
+<%}%>
+<%})%>
+
+
+-you will see async function error or closing/opening matching tag not found error in case ejs is not correct.
+-agar 404 error aa rhe h mtlb hamne abhi uska route nhi bnaya h 
+
+<%- include('another ejs file')%>

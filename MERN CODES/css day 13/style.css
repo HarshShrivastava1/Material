@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+}
+.box1{
+    /* background-color: red; */
+/* background: linear-gradient( to bottom right,rgb(244, 175, 175) ,rgb(154, 231, 154),rgb(70, 70, 116),rgb(170, 93, 93)); */
+/* background: radial-gradient(red,green) */
+background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww&w=1000&q=80);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+background-attachment: fixed;
+
+}
+.box2{
+    /* background-color: blue; */
+    background: linear-gradient( to bottom right,rgb(244, 175, 175) ,rgb(154, 231, 154),rgb(70, 70, 116),rgb(170, 93, 93));
+}
+.box3{
+    /* background-color: blue; */
+    background: radial-gradient( rgb(244, 175, 175) ,rgb(154, 231, 154),rgb(70, 70, 116),rgb(170, 93, 93));
+}
+
+/* colour hunt
+paralize effecty,bg attechment fixed */
+
+h1{
+    color: aliceblue;
+    /* background-color: rgb(0, 0, 0); */
+    text-align: center;
+    width:70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    
+}

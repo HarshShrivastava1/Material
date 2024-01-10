@@ -1,0 +1,21 @@
+<%- include('header') %>
+    <%- include('nav') %>
+        <% const arr_key=Object.keys(data);%>
+            <div class="main">
+                <h1>update</h1>
+                <form action="/update/<%= idx %>" method="post">
+                    <% arr_key.forEach(ele=> { %>
+                        <input type="text" value="<%= data[ele] %>" name="<%= ele%>">
+                        <% }) %>
+                            <button type="submit">submit</button>
+                </form>
+            </div>
+            <%- include('footer') %>
+                <!-- <input type="text" placeholder="id" name="id"> -->
+                <!-- 
+                    <input type="text" placeholder="author" name="author">
+                    <input type="text" placeholder="desc" name="desc">
+                    <input type="text" placeholder="page" name="page">
+                    <input type="text" placeholder="pub" name="pub">
+                    <input type="text" placeholder="yr" name="yr">
+                    <input type="text" placeholder="price" name="price"> -->

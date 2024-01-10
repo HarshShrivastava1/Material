@@ -1,0 +1,28 @@
+JSON(JavaScript Object Notation) -> Array of Objects
+
+To render json in ejs page we send the array of objects(json) in the second argument of render method in "index.js" file
+
+In order to show json in ejs firstly we user "forEach" to iterate over loop where we get (element,index) and for every element(object) we user "." to print/show it's single value(property).
+
+**we can not directly show object in ejs, we need to show single property of object at a time
+
+
+**sending data from ejs->js (frontend to backend)
+
+from frontend you can send data in the form of "HTML FORM"
+
+form method -> 1. GET | 2. POST
+
+1. req.query -> "gets data from the URL"
+if we want to send the form data in the browser url then we use "GET METHOD", but this technique is not secure since others can see the data in the url
+
+2. req.body -> "get the data in the body(secure)"
+if we want to send the data in the secure way then we use "POST METHOD", this send the data hidingly and no one can see the data 
+
+3. req.params -> "use for dynamic routing"
+
+
+in form there is an "action" attribute and "method"
+action -> on which route the form data need to send.
+
+every form element has an attribute "name", this name attribute use to target the value of the form elements to the backend/server

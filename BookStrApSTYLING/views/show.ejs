@@ -1,0 +1,36 @@
+<%- include('header')%> 
+<%- include('nav')%> 
+<div class="showPage">
+   <h1>Your Books</h1>
+   <div class="images">
+      <img src="https://media.istockphoto.com/id/177004529/photo/book-stack.jpg?s=1024x1024&w=is&k=20&c=Z0GF4p0pehlXEjZYFyhNSDs5NN8L0UqkkgXbCMNQSZo=" alt="">
+
+      <img src="https://media.istockphoto.com/id/177120759/photo/books-on-white-background.jpg?s=1024x1024&w=is&k=20&c=ibuvJ7Aku6DUhgOuNglDmfV04Kw-bUduoxEKrO05lMk=" alt="">
+  </div>
+   <div class="midContentShPg">
+         <% books.forEach(function(elem,index){ %>
+            <h1> id: <%= elem.id %> </h1> 
+            &nbsp;&nbsp;
+            <h1> Name: <%= elem.name %>  </h1> 
+            &nbsp;&nbsp;
+            <h1> Author: <%= elem.author %>  </h1>
+            &nbsp;&nbsp;
+            <h1> Description: <%= elem.description %>  </h1> 
+            &nbsp;&nbsp;
+            <h1> Pages: <%= elem.pages %>  </h1> 
+            &nbsp;&nbsp;
+            <h1> Publication: <%= elem.publication %>  </h1>
+            &nbsp;&nbsp; 
+            <h1> Year: <%= elem.year %>  </h1> 
+            &nbsp;&nbsp;
+            <h1> Price: <%= elem.price %>  </h1> 
+            &nbsp;&nbsp;
+            <a href="/details/<%= index%>">Explore more</a> 
+            <br>
+         <% }) %> 
+   </div>
+</div>
+<%- include('footer')%>
+
+
+

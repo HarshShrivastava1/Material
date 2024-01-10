@@ -1,0 +1,8 @@
+5. READING single data from database, in the route we use the given model/schema object and call "findById(id)" method and pass id(req.param.id) got in the dynamic get/post route, further save the data in variable and use it wherever we want.
+
+CODE(read single data):
+try{
+const book = await ModelObject.findById(req.params.id)
+//now we can use "book" in render/json/send
+
+} catch(err){..}

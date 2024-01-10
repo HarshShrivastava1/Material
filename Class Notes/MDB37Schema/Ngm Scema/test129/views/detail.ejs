@@ -1,0 +1,22 @@
+<%- include('header') %> <%- include('nav') %>
+        <% const arr_key=Object.keys(data);%>
+            <div class="card_par">
+                <div class="card2">
+                    <% arr_key.forEach((name_ele,index)=> { %>
+                        <h1>
+                            <%= name_ele%> = <%= data[name_ele] %>
+                        </h1>
+                        <% }) %>
+                </div>
+                <div class="btn_area">
+                    <a href="/detail/<%= idx %>/author/<%= data.author %>\update" target="_blank"
+                        rel="noopener noreferrer">
+                        <button>
+                            update
+                        </button>
+                    </a>
+                    <a href="/detail/<%= idx %>/author/<%= data.author %>\delete" target="_blank"
+                        rel="noopener noreferrer"> <button> delete </button> </a>
+                </div>
+            </div>
+            <%- include('footer') %>

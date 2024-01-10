@@ -1,0 +1,30 @@
+
+
+
+Confugring Database
+
+1. Download Mongodb server, Compass, mongosh cli
+
+2. In our express app install mongoose 
+npm i --save mongoose
+
+3. Create a new folder "models" in the root directory
+
+4. In models folder create a file of any name let's say "db.js", in it we will code to connect our app with database. At last we will require this file in "app.js" to connect with the express app.
+
+code(models/db.js):
+
+const mongoose = require("mongoose");
+
+mongoose
+    .connect("mongodb://127.0.0.1:27017/databasename")
+    .then(() => console.log("db connected!"))
+    .catch((err) => console.log(err.message));
+
+code(app.js):
+// db connect
+require("./models/db");
+
+C:\Users\computername\AppData\Local\Programs\mongosh" 
+then enterMarkeLinkCopyKrLena mongosh url 
+*AppData file me milta nhi h usko route me \AppData likhkr nikala jata h. 

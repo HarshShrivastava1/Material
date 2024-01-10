@@ -1,0 +1,23 @@
+<%- include('header') %>
+    <%- include('nav') %>
+        <% array.forEach((element,index)=> { %>
+            <div class="card">
+                <h1>
+                    <%= element.name %>
+                </h1>
+                <h1>
+                    <%= element.desc %>
+                </h1>
+                <h1>
+                    <%= element.author %>
+                </h1>
+                <!-- <h1> -->
+                <!-- <%#  %><%# element.id %> -->
+                <!-- </h1> -->
+                <a href="/detail/<%= index %>/" target="_blank" rel="noopener noreferrer"><button>Explore
+                        More</button></a>
+            </div>
+
+            <% }) %>
+
+                <%- include('footer') %>

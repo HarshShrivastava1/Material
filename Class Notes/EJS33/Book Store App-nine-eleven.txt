@@ -1,0 +1,43 @@
+**Book Store App
+
+(PART - I)
+
+1. Create Navigation
+Home(/) | Register Book(/register) | Show Books(/show) | About(/about)
+**use partials
+
+2. In Register Book -> Create a form(id, image, name,author,description,page,publication,year,prize)
+action="/register" method="POST"
+
+3. We get the data in /register POST route "req.body" -> save the data in globle variable "BOOKS"(BOOKS.push(req.body)) and redirect the page to "/show route" -> res.redirect("/show")
+
+4. In /show -> we'll send BOOKS in second argument of res.render("show", {Books: BOOKS}) -> with the help of forEach(()=> {book.id..}) we show the cards in "show.ejs"
+card must have name,description, author and a button of "Explore More" 
+
+res.redirect -> to send the control to the existing "get"router from the router function
+res.redirect("existing GET route")
+
+(PART - II)
+
+5. when "Explore More is clicked" -> /details/:index(dynamic get route) 	
+in the same router we get the index in "req.params.index" where we find the partuicular book by the given index in params , "details.ejs" page will render in it we send the book in the second argument and show all the info and delete and update buttons will also be there.
+
+(PART - III)
+
+6. When user press delete button on "Details.ejs" page, it must go to "/delete/:index"(dynamic get route) and in the route we splice(delete) the BOOK by index(req.params.index) and redirect to "/show"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

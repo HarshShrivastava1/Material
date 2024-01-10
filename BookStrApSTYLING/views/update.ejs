@@ -1,0 +1,47 @@
+
+<%- include("header.ejs") %>
+
+<%- include("nav.ejs") %>
+
+<h1>Update page</h1>
+<form action="/update/<%= index%>" method="post" >
+    <h1>Update Book</h1>
+    <input value="<%= book.id %>" type="text" placeholder="id" name="id">
+    <br><br>
+    <!--  -->
+
+    <input value="<%= book.name %>" type="text" placeholder="name" name="name">
+    <br><br>
+    <!--  -->
+
+    <input value="<%= book.author %>" type="text" placeholder="author" name="author">
+    <br><br>
+    <!--  -->
+
+    <input value="<%= book.description %>" type="text" placeholder="description" name="description">
+    <br><br>
+    <!--  -->
+
+    <input value="<%= book.pages %>" type="number" placeholder="Pages" name="pages">
+    <br><br>
+    <!--  -->
+
+    <input value="<%= book.publication %>" type="text" placeholder="Publication" name="publication">
+    <br><br>
+    <!--  -->
+
+    <input value="<%= book.year %>" type="number" placeholder="year" name="year">
+    <br><br>
+    <!--  -->
+
+    <input value="<%= book.price %>" type="number" placeholder="price" name="price">
+    <br><br>
+    <!--  -->
+
+    <button type="reset" >Reset</button>
+    <button type="submit" >Submit</button>
+</form>
+
+<%- include("footer.ejs") %>
+
+

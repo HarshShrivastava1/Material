@@ -1,0 +1,33 @@
+6. DELETING single data from database, in the route we use the given model/schema object and call "findByIdAndDelete(id)" method and pass id(req.param.id) got in the dynamic get/post route
+CODE(delete single data):
+try{
+const book = await ModelObject.findByIdAndDelete(req.params.id)
+//now we can  render/json/send
+
+} catch(err){..}
+
+
+7. TO Update a data from the database
+
+step 1: find the data from the database with the help of "findById(id)" method and pass id(req.params.id) got in the dynamic get route and save the returned object in the variable let's say "book" and render it into the "Update.ejs" to prefill the data 
+
+step 2: in "update.ejs" form, update the prefill data and press submit button where it goes to "/update/_id" dynamic post route in the same route we run "findByIdAndUpdate(id,req.body)" method where id(req.params.id) got from dynamic post route and "req.body" is the updated data from the "Update.ejs" page.
+
+CODE(find single for update)
+try{
+const book = await ModelObject.findById(req.params.id)
+//now we can  render/json/send
+
+} catch(err){..}
+
+
+CODE(update single by id)
+try{
+const book = await ModelObject.findByIdAndUpdate(req.params.id, req.body)
+//now we can  render/json/send
+
+} catch(err){..}
+
+
+
+

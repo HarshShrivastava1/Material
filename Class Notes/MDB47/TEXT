@@ -1,0 +1,52 @@
+Validations , input ka type number h usko ham inspact pr ja kr changer kr skte h , ese me frontend pr validation lagane ka koi matlav nhi , validation lgana h to esa lgao ki usko koi ched chaad na kre , isliye iss class me ham database me validations lgynge , means jaha hamne schema bnaya  tha wha , jisse wrong data enter he nhi hoga phle he rok dege 
+
+
+trim -- sapce hoti h aaju baju unhe hata deta h 
+required -- khaali nhi chod skte 
+Regex-- used in validation 
+unique-- same data nhi lega form me
+max aur min length -- itne se kam nhi aur itne se jyda nhi hone chaiye charecters 
+Date aur Time stamps -- isme data aur time aate h , Tymstamps me Schema create date time info aur Uske updates ki date time info
+
+
+
+
+
+
+--------------------------------------SCHEMA FILE----------------------------------------------------------- 
+
+const mongoose = require("mongoose");
+
+const bookModel = new mongoose.Schema(
+    {
+        image: {
+            type: String,
+            required: [true, "Image is required"],
+            match: [
+                /(https?:\/\/)(www\.?)?([a-zA-Z0-9-]){2,}(\.[a-zA-Z]{2,6})?(\/([a-zA-Z-_\/.0-9#:?=&;,]*)?)?/,
+                "Invalid Image URL",
+            ],
+        },
+        name: {
+            type: String,
+            trim: true,
+            unique: true,
+            required: [true, "Name is required"],
+            minLength: [3, "Name must be atleast 3 characters long"],
+            maxLength: [20, "Name must not exceed 20 characters"],
+        },
+        author: String,
+        description: String,
+        pages: Number,
+        publication: String,
+        prize: Number,
+        year: String,
+        // date: {
+        //     type: Date,
+        //     default: Date.now,
+        // },
+    },
+    { timestamps: true }
+);
+
+module.exports = mongoose.model("book", bookModel);

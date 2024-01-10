@@ -1,0 +1,38 @@
+Fragment tag / Empity tag :- we know in return we just pass only one entity , thats why gernally we use div as a wrapper and dump our contents into it , but suppose there are 100 of divs are used in our code then it effect the understandability of program and inc compaxicity , to tackle it we use fragment and empity tag instide of div to wrape our code 
+* fragment and empity tag works till into in virtual dom but they cant participate in real dom , so it inc readiabliity and code looks less complex .
+
+Empty tags <> </> usage
+
+example :- return(
+ <> 
+<h1>hii<h1/>
+<h1>Good morning<h1/>
+</>
+)
+
+Fregmant tags <Fregmant> </Fregmant> usage
+
+example :- return(
+<React.Fragment> 
+<h1>hii<h1/>
+<h1>Good morning<h1/>
+</React.Fragment>
+)
+
+dekho bro jb bhi ham jhud ka variable banate h tb code wise hmri value update ho jati h pr html ya dom me react hamari value ko update nhi kr pata , isliye  ham react ke dwara diye hue variable ka use krte h jiise hamri value Virtual dom aur real dom me update ho ske 
+* React dwara diye jane wale var ka naam h useState
+
+* Ex- const [InitialValue, Updated value] = useState(InitialValue)
+
+*useState ye array return krta h jisko demonstrated krne ke liye do value hoti h ek initial aur ek updated value , initial value read only ke liye hoti h while 2nd value for updation , ek baar initialize kro fir update krte rho .
+
+example:-
+gernally be make var like this 
+Let name = 'john '
+
+
+In react we use it in this formate
+Const name [john , setvalue ]= use state('john');
+setvalve("Ram");
+//ram will replaced with john 
+consol.log("name") // output= Ram

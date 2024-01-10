@@ -1,0 +1,1 @@
+aur isme kaise data pas krna hai from route to view ye btaya hai different tarike se

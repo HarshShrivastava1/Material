@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.a{
+    width: 100%;
+    height: 70%;
+    background-color: tomato;
+    /* padding: 20px; */
+    border: 1px solid tomato;
+
+}
+
+.a > p{
+    width: 50%;
+    height: 10%;
+    background-color: yellow;
+    margin-top: 30px;
+    /* this is fault , ham margine p ko de rhe h to div ko margin kese mil ja rha h to overcome or tackle this fault padding ya border lgate h  div me */
+    overflow: auto;
+    
+}
+.b{
+    width: 100%;
+    height: 30%;
+    background-color: royalblue;   
+}

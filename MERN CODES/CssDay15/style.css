@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+}
+
+html,body{
+    height: 100%;
+    widows: 100%;
+    background-image: url(https://prosteps.cloudimg.io/v7m/resizeinbox/1000x1000/fsharp0/https://tilroy.s3.eu-west-1.amazonaws.com/354/product/MBA-15-starlight-21.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.nav {
+    width: 100%;
+    height:45px;
+    background-color:#454545;
+    justify-content: center;
+    display: flex;
+    color:#d3cfcf;
+    align-items: center;
+    gap:40px;
+}
+
+.nav,h4{
+    font-size: 13px;
+    font-weight:100;
+}
+
+#heading{
+margin-top: 90px;
+text-align: center;
+font-size: 55px;
+}
+
+#line{
+    text-align: center;
+    font-size: 25px;
+}

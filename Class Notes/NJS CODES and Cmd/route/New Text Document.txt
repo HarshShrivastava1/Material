@@ -1,0 +1,3 @@
+isme page kaise route krte hai vo btaya tha
+
+mainly index.ejs and index.js k files me hi changes krne hote hai

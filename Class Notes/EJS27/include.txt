@@ -1,0 +1,16 @@
+Whenever we want to include ejs template in another ejs file then we use "<%- include("filepath/filename")%>"
+
+in node.js "public" folder is kept "static path" which can be accessed directly by putting "/" in "href" or "src" and can only be accessable in "views/.ejs" 
+otherwise we have to use standard path. 
+
+--How to apply css
+inline css 
+internal css
+external css(in public stylesheets accerss with "/stylesheets/stylenamecss")
+
+
+To create template of boilerplate we create 
+header.ejs and footer.ejs
+in "header.ejs" we write above boilerplate before body
+and in "footer.ejs" we write boilerplate of closing body and html
+

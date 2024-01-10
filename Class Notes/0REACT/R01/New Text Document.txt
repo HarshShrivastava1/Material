@@ -1,0 +1,15 @@
+React ? --> frontend javascript framework createdby facebook , in old version we install the framework through 
+
+boilerplate of React 
+
+npm create vite@latest
+
+Project name: ... xyz
+Select a framework: » React
+Select a variant: » JavaScript
+
+  cd property
+  npm install
+
+  code .
+  npm run dev

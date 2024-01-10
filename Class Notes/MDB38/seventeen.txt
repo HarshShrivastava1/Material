@@ -1,0 +1,24 @@
+1. require the schema/model in the router file(index.js)
+
+2. To be careful from callback hell we use try-catch async-await in the route with the async code
+
+3. CREATING DATA in Database, since we get data in the req.body/req.query, we send the data in the object got from model/schema
+
+CODE(create data):
+try{
+const obj = new ModelObj(formdata);
+await obj.save()
+
+.....furhter code as required
+
+}catch(err){...}
+
+
+4. READING all data from database, in the route we user the given model/schema object and call "find()" method, further save thr data in variable and use it wherever we want.
+
+CODE(read all data):
+try{
+const books = await ModelObject.find()
+//now we can use "books" in render/json/send
+
+} catch(err){..}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.pg {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+}
+.box1 {
+  background: linear-gradient( to left bottom, red, blue, orange);
+}
+.box2 {
+background: radial-gradient(red, blue, orange);
+}
+.box3 {
+  background: linear-gradient( to right, red, blue, orange);
+}

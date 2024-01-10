@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/*
+tag selector 
+class selector
+id selector 
+*/
+
+/* selector {css property} */
+/* tag selector  */
+/* h1 {
+    color: red;
+} */
+
+/* id selector is used to select(single) element uniquely */
+/* never use same id in multiple elements */
+/* never use multiple id's in same element */
+#a{
+    color: red;
+}
+
+#b{
+    color: blue;
+}

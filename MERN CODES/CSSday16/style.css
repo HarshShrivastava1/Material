@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  height: 100px;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+}
+#nav-part1 {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+#nav-part1 h4 {
+  font-weight: 600;
+  color: #444;
+  font-size: 15px;
+}
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#nav img {
+  height: 80px;
+  
+}
+
+#nav-part2 button {
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+#nav-part2 #sign-up {
+  background-color: #0d0c22;
+  color: #fff;
+  padding: 14px 20px;
+}
+
+#center {
+  height: 80%;
+  width: 100%;
+  background-color: #000;
+}
+
+#center video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.page2 {
+    height: 0%;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+}

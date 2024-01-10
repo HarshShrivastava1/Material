@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#btn{
+    margin: 5% 50%;
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: aqua;
+
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(128, 128, 128, 0.692);
+    display: flex;
+    position: absolute;
+    left: 50%;
+    position: relative;
+}
+
+.box h5{
+    font-size: 50px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+h3{
+    font-size: 25px;
+    font-family: Helvetica;
+    margin-left: 47%;
+    margin-top: 70px;
+    color: rgb(28, 28, 238);
+}
+h1{
+    font-size: 25px;
+    font-family: Helvetica;
+    margin-left: 40%;
+    margin-top: 50px;
+    color: red;
+}
+

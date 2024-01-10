@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <nav>
+    <h3 class="sub"> homepage</h3>
+    <h3 class="sub">about</h3>
+    <h3 class="sub">Signup</h3>
+  </nav>
+  <form action="/profile" method="post">
+    <input type="text" name="Name" placeholder="Name">
+    <input type="password" name="password" placeholder="password">
+    <input type="email" name="email" placeholder="example@gamil.com">
+    <button type="submit">click here</button>
+  </form>
+</body>
+
+</html>

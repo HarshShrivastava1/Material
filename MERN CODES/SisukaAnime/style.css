@@ -1,0 +1,34 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+ .box{
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  animation-name: mov;
+  animation-duration: 3s;
+  animation-delay: 1s ;
+  position: absolute;
+ }
+
+ @keyframes mov {
+  from{
+    top: 0 ;
+    left : 0;
+    background-color: red;
+  }
+
+  to{
+    left : 100% ;
+    top: 50%;
+    background-color: blue;
+  }
+ }

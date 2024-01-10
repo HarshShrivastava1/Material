@@ -1,0 +1,14 @@
+Create an express app
+
+create navigation
+Home(/) | About(/about) | Signup(/signup)
+make respective pages and render in route
+
+in signup page
+create form and take Name,Email,Password
+submit the form to "/profile" via "GET" method where "profile.ejs" page render and display all the info.
+
+
+convert the "/profile" form route into the POST method where the data will get from "req.body" instead of "req.query" , instead of router.get , router.post
+
+->bodyparser is responsibe for activating req.body in app -> the coding lies in app.js

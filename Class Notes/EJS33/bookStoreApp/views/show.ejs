@@ -1,0 +1,21 @@
+<div style="text-align: center;" class="show">
+   <%- include('header')%>
+<h1 style="font-style: italic;" >SHOW Page</h1>
+<br><br><br>
+<div class="boxShow">
+   <% books.forEach(function(elem,index){ %>
+      <br>
+      <h1> id: <%= elem.id %> </h1> 
+      <h1> Name: <%= elem.name %>  </h1> 
+      <h1> Author: <%= elem.author %>  </h1> 
+      <h1> Description: <%= elem.description %>  </h1> 
+      <h1> Pages: <%= elem.pages %>  </h1> 
+      <h1> Publication: <%= elem.publication %>  </h1> 
+      <h1> Year: <%= elem.year %>  </h1> 
+      <h1> Price: <%= elem.price %>  </h1> 
+      <a href="/details/<%= index%>">Explore more</a> 
+      
+   <% }) %> 
+</div>
+<%- include('footer')%>
+</div>   

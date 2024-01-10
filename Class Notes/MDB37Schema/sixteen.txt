@@ -1,0 +1,38 @@
+--SQL -> data save in table format
+--NoSQL -> data save in json format 
+--We use NoSQL,
+--"Database" is the collection of "Collections"(i.e. a file of an array of objects) and "Collection" is the collection of multiple "documents"(i.e. an object)
+
+--DATABASE:(collection of collections)
+
+abc.json(collection)
+[{document},{},{}]
+
+def.json(collection)
+[{document},{},{}]
+
+ghi.json(collection)
+[{document},{},{}]
+
+
+--When we want to save the data(req.body,req.query) in the database, so we create Schema/Model(blueprint of document/predefined document model) and with the help of reference of the Schema we save the data of our app in to the database.
+
+code:(collection)
+const mongoose = require("mongoose");
+const documentref = new mongoose.Schema({
+    name: String,
+    author: String,
+    ...
+});
+module.exports = mongoose.model("collectionname", documentref);
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+1. https://stackoverflow.com/questions/24609991/using-socket-io-in-express-4-and-express-generators-bin-www
+
+2 create file on root.
+
+copy code from stackoverflow and paste in the socketapi.js
+
+modify your bin/www
+
+views/index.ejs
+just upper </body>
+
+
+
+3. npm i socket.io
+
+
+express 4 socketio

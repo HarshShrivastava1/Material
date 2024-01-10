@@ -1,0 +1,36 @@
+render method is used for sending view(ejs) to browser in particular route
+res./req.rander("pagename")
+
+route -> the path where the particular file(ejs/view/messgae) opens
+
+Ex:-
+route :- MP//UP//Bihar//Jk//Manipur//Rajisthan -----> diff raste
+views:-lack//rodes//construction//Sikare//tribes//culture --->diff views accosiate with that path called route
+
+view -> path and ejs is predefined in app js therefore when we use render we dont't put ".ejs" and "path name"
+
+whenever we send any kind of data for e.g. text/multimedia/url we'll get the data in "req" of the same route.
+//req.render(view [, locals] [, callback])
+
+and whenever we want to send the data to client/frontend/browser we will send with the help of "res"
+//res.render(viewName, { req : req, res : res /* other models */};
+
+APni BhasA mE
+
+req :- jab hame backend se frontEnd me data bhejna hota h tb req use krte h 
+//req.render(view [, locals] [, callback])
+
+res :- jab hame frontend se backEnd me data bhejna hota h tb req use krte h 
+//res.render(view [, locals] [, callback])
+
+we need to mannually refresh server when we change ".js/server file" in order to change the file automatically we user nodemon
+
+
+"lookup view" error is faced when we do not have matching page name written in render("pagename")
+"Not Found" error is faced when we do not have matching route ikn the ".js/server file"
+
+npm install -g nodemon
+
+-nodemon
+-npx nodemon
+

@@ -1,0 +1,42 @@
+/* universal selector star  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Give all space to parent  */
+body ,html {
+width: 100%;
+height: 100%;
+
+}
+
+/* font operations like what we do on it  */
+h1{
+    color: #69202b71; 
+    /* rbg , rgba, hax code , colour name*/
+    /* rgb value varies upto 0 to 255  */
+    /* rgba - rgba(255,255,255,0-1) (0 -255) */
+    font-size: 100%;
+    /*Most browsers default to a 16px base font size, so 100% of that would be 16px , and 50% would be 8px , thats why we use px  to set a font size .*/
+
+    font-weight:900;
+    /* font weight is varies value upto 100-900 (They All are must have to be in multiple of 100)*/
+
+     font-family: cursive;
+  
+     /* sarif(Heidings)and san sarif (Paragraps), handwriting(Cursive), display(unique fonts ) */
+
+     letter-spacing: 6px;
+     word-spacing: 50px;  
+     text-decoration:line-through;
+}
+
+/* color */
+/* color name - white */
+/* hexcode - #ffffff */
+/* rgb - rgb(255,255,255) (0 -255) */
+/* rgba - rgba(255,255,255,0-1) (0 -255) */
+

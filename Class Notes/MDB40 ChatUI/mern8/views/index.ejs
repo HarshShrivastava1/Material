@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main">
+    <div class="conversationArea">
+      <div class="messages">
+      </div>
+      <div class="inputes">
+        <input type="text" class="message" placeholder="Enter message">
+        <button>send</button>
+      </div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+
+    function incomingMessage(msg) {
+      document.querySelector('.messages').innerHTML += `<div class="msg incomingMessage">${msg}</div>`
+    }
+
+    function outgoingMessage(msg) {
+      document.querySelector('.messages').innerHTML += `<div class="msg outgoingMessage">${msg}</div>`
+
+    }
+
+    document.querySelector('button').addEventListener('click', (eve) => {
+      const msg = document.querySelector('input').value
+      outgoingMessage(msg)
+      document.querySelector('input').value = ''
+      socket.emit('newMsg', msg)
+
+    })
+
+    socket.on('incomingMessage', msg => {
+      incomingMessage(msg)
+    })
+  </script>
+</body>
+
+</html>

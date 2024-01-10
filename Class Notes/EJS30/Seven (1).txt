@@ -1,0 +1,25 @@
+ejs -> js via Forms
+
+
+method:
+GET(default)/POST 
+
+request:
+query(GET)/body(POST)/params
+
+action: 
+takes path(route/url) where we want to send the data
+
+name(attribute): 
+there must be name attribute in every form element so that the data can move towards backend
+
+form button:
+**form submission is possible only by "submit" type button
+by default form button is type of "submit"
+we can manully set type to "reset"/"button"
+
+
+res.send("message") // use to show message in the frontend
+res.json([{},{}]) //if we want to show json in the frontend 
+
+res.send/json/render -> we can use one method at a time

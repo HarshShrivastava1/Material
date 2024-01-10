@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    
+    
+}
+.main .nav{
+ 
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+    cursor: pointer;
+}
+.nav img{
+    height: 70px;
+}
+.nav .nav1{
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.btn1{
+    padding: 10px 20px;
+   font-size: 16px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.btn2{
+    padding: 10px 20px;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+   
+}
+
+.main h1{
+    margin: 1%;
+    font-size: 100px;
+}
+.main h1:nth-child(2){
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+.main h1:nth-child(3){
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main h1:nth-child(4){
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main span{
+    font-size: 20px;
+    background-color: rgb(187, 32, 32);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.img{
+    height: 250px;
+    position: absolute;
+}
+
+.img1{
+    top: 11%;
+    left: 7%;
+    border-radius: 30px;
+}
+.img2{
+    bottom: 11%;
+    right: 7%;
+    border-radius: 30px;
+}
+
+.img3{
+    height: 200px;
+    top: 11%;
+    right: 1%;
+    border-radius: 30px;
+}
+.img4{
+    height: 200px;
+    bottom: 11%;
+    left: 1%;
+    border-radius: 30px;
+}
+
+.main i {
+    position: absolute;
+    bottom: 8%;
+    left: 45%;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}

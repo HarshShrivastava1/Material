@@ -1,0 +1,12 @@
+isme array ko kaise web me show krna hai vo btaya tha
+
+<% var arr=[21,23,34,56,22,11] %> 
+<% arr.forEach(function(e,i){ %>
+<% if(e%2!=0) {%> 
+<%= e %>
+<% } %>
+<%})%> 
+
+
+
+
